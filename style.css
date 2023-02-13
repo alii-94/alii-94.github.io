@@ -1,0 +1,145 @@
+/*section: cross pages css regarding more than one html page*/
+
+
+/*TODO: Una typography responsive per il menu
+quando diminuisco la portview mi dà problemi*/
+ul.menu{
+    list-style:none;
+
+    /* il flex + float sottostante scorre 
+    sl di sotto della parte non visibile*/
+    
+    /* display:flex;  
+    float:left; */
+    position: sticky;
+    top: 5px;
+    /*TODO: come metto L'home button che è più grande sulla stessa linea deglia ltri? */
+    
+    
+}
+
+
+
+.menu-item{
+    text-decoration:none;
+    /*mette il float right su un item alla volta
+    a partire dal primo */
+    float: right;
+    padding: 10px 10px;
+    border-bottom: solid blueviolet;
+    border-left: solid;
+    border-radius:5px;
+    font-family: monospace;
+    font-weight: bolder;
+    background-color: darkslategray;
+    margin: px;
+    margin-top: 5px;
+}
+
+ul li.home-link{
+    font-size: 1.5em;
+    margin-left:5px;
+    margin-top:unset;
+}
+
+
+
+.menu a{
+    /*Per togliere l'underline dai link bisogna agire direttamente sull'anchor*/
+    text-decoration: none;
+    color: white;
+
+}
+
+/*pseudoselettore per cambiare background appena passo sopra*/
+.menu li:hover, .menu li:focus-within   {
+    background-color: rgb(73, 122, 122);
+    /*figo mettendo questo border mi abbassa un pò i bottoni*/
+    border-top: white solid;
+}
+/*pseudoselettore attivo quando tengo cliccato*/
+.menu li:active{
+    border: solid white;
+    
+}
+body{
+    background: rgba(4, 117, 55, 0.418);
+}
+
+hr {
+     height: 5px; 
+    background-color:blueviolet ;
+    color: rgb(22, 104, 97);
+    list-style: none;
+    border-top:dashed;
+    border-bottom:solid 3px;
+  }
+ 
+
+/*section: index.html layout*/
+
+
+h1{
+    color:green;
+    text-shadow: 1px 0.5px rgba(3, 61, 29, 0.418) ;
+
+}
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+img.emerson{
+
+    float:right;
+    border-radius: 50%;
+}
+
+/*? NON FUNZIONA: Volevo spostare il testo a a lato
+come se girasse intorno all'immagine */
+div.emerson{
+    position: fixed;
+    top: 100px;
+    /* float:right; */
+    display:block;
+    height:110px;
+    width:70px;
+    border-radius: 40%;
+    background-color: blue;
+    background-image: url("../images/emerson.jpg");
+    background-position:center;
+    z-index:-1;
+}
+
+article.column-example{
+    
+    height: 600px;
+    column-count: auto;
+    column-width: 20vw;
+}
+  /*? NON FUNZIONA: Avevo visto un ads in mezzo ad un articolo che lo tagliava per tutta la lunghezza*/
+  .ads{
+    display: block;
+    float:right;
+    width: 100vw;
+    height: fit-content;
+    /* display: float; */
+    background-color: aqua;
+}
+
+
+/*section: floatLayout.html layout */
+
+
+
+
+
+/*section: gridfloat.html layout */
+
+
+
+
+
+
+
+
