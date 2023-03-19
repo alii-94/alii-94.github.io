@@ -2,5 +2,5 @@
 
 This is my *first* github pages test
 
--[x] done
--[] to do
+- [x] done
+- [ ] to do :joy:
