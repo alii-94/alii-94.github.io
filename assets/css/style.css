@@ -1,0 +1,59 @@
+body{
+    
+    margin:0;
+}
+
+div.alisgenie.main-wrapper{
+    margin:0;
+    box-sizing: content-box;
+}
+/*Top nav*/
+
+.top-bar{
+    height:  50px;
+    display: flex;
+    flex-direction: row;
+    padding:0px 100px;
+    box-shadow: 0px 1px 15px 0px rgba(0,0,0,0.50);
+    position: sticky;
+    top: -5px;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.7);
+    /* background-color: aqua; */
+}
+
+div.alisgenie .top-bar ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    
+}
+div.alisgenie .title-logo{
+    display:flex;
+    gap: 5px;
+}
+div.alisgenie .top-bar img{
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+}
+
+
+/* header */
+
+div.cardio{
+    height: 500px;
+    width :200px;
+    /* background-image: url("./img/ecg-light-blue.svg"); */
+    background-size: cover;
+    /* background-color: red; */
+}
+
+.cardio img{
+    height: 100%;
+    display: inline;
+    object-fit: contain;
+    box-sizing: content-box;
+    margin:0;
+    
+}
